@@ -8,7 +8,7 @@ let songs = []; // Array to store fetched songs
 let currentSongIndex = 0;
 
 function displayMusic() {
-    fetch("http://localhost:3000/tracks")
+    fetch("https://project1-data.onrender.com/tracks")
         .then((response) => response.json())
         .then((data) => {
             songs = data; // Store fetched songs in the array
